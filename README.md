@@ -26,14 +26,10 @@ npm rm tslint tslint-angular tslint-config-prettier tslint-plugin-prettier
 ```code
 @typescript-eslint/eslint-plugin
 @typescript-eslint/parser
-eslint
-eslint-plugin-prettier
-eslint-plugin-import
-eslint-plugin-jsdoc
-eslint-plugin-prefer-arrow
-eslint-config-prettier
 prettier
 prettier-eslint
+eslint-plugin-prettier
+eslint-config-prettier
 ```
 ## package
 ```json

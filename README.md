@@ -2,7 +2,7 @@
 
 ## artigos
 ```code
-https://github.com/angular-eslint/angular-eslint
+[https://github.com/angular-eslint/angular-eslint](https://github.com/angular-eslint/angular-eslint)
 https://dev.to/gsarciotto/migrating-and-configuring-eslint-with-angular-11-3fg1
 https://dev.to/entangledcognition/migrating-from-tslint-to-es-lint-formating-with-prettier-vs-code-workspaces-4pgi
 https://dev.to/dreiv/using-eslint-and-prettier-with-vscode-in-an-angular-project-42ib

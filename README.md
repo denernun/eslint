@@ -30,6 +30,8 @@ npm rm tslint tslint-angular tslint-config-prettier tslint-plugin-prettier
 
 ## pacotes locais
 
+<https://www.npmjs.com/package/@typescript-eslint/eslint-plugin>
+
 ```code
 @typescript-eslint/eslint-plugin
 @typescript-eslint/parser

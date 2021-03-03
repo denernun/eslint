@@ -1,6 +1,7 @@
 # eslint
 
 ## artigos
+
 ```code
 https://github.com/angular-eslint/angular-eslint
 https://dev.to/gsarciotto/migrating-and-configuring-eslint-with-angular-11-3fg1
@@ -10,40 +11,51 @@ https://medium.com/@kelmants/best-practices-angular-with-eslint-prettier-husky-5
 https://dev.to/bhargavmantha/the-secret-to-configuring-eslint-prettier-prettier-eslint-plugin-in-vscode-for-angular-ts-and-js-project-51la
 https://indepth.dev/posts/1282/setting-up-efficient-workflows-with-eslint-prettier-and-typescript
 ```
+
 ## pacotes globais
+
 ```code
 @angular-devkit/core
 @angular-devkit/schematics
 @angular-eslint/schematics
 ```
+
 ## converter
+
 ```code
 ng add @angular-eslint/schematics
 ng g @angular-eslint/schematics:convert-tslint-to-eslint app
 npm rm tslint tslint-angular tslint-config-prettier tslint-plugin-prettier
 ```
+
 ## pacotes locais
+
 ```code
 @typescript-eslint/eslint-plugin
 @typescript-eslint/parser
 prettier
-prettier-eslint
 eslint-plugin-prettier
 eslint-config-prettier
 ```
+
 ## package
+
 ```json
 "scripts": {
-  "eslint": "eslint --color --fix -c .eslintrc.json --ext .ts ./src/app",
-  "eslint-fix": "eslint --color --fix -c .eslintrc.json --fix --ext .ts ./src/app",
+  "lint": "eslint --color --fix -c .eslintrc.json --ext .ts ./src/app",
+  "lint-fix": "eslint --color --fix -c .eslintrc.json --fix --ext .ts ./src/app",
 }
 ```
+
 ## .eslintrc.json
+
 ```
 .eslintignore
 node_modules
 ```
+
 ## .eslintrc.json
+
 ```json
 {
   "root": true,
@@ -109,7 +121,10 @@ node_modules
         "@typescript-eslint/no-misused-promises": "off",
         "@typescript-eslint/unbound-method": "off",
         "@typescript-eslint/no-extraneous-class": "off",
-        "@typescript-eslint/no-explicit-any": ["off", { "fixToUnknown": false, "ignoreRestArgs": true }],
+        "@typescript-eslint/no-explicit-any": [
+          "off",
+          { "fixToUnknown": false, "ignoreRestArgs": true }
+        ],
         "@typescript-eslint/no-unsafe-member-access": "off",
         "@typescript-eslint/no-unsafe-assignment": "off",
         "@typescript-eslint/no-unsafe-call": "off",
@@ -211,19 +226,21 @@ node_modules
   ]
 }
 ```
+
 ## tsconfig.eslint.json
+
 ```json
 {
   "extends": "./tsconfig.json",
-  "include": [
-    "src/**/*.ts"
-  ]
+  "include": ["src/**/*.ts"]
 }
 ```
+
 ## .prettierrc
+
 ```json
 {
-  "printWidth": 140,
+  "printWidth": 120,
   "tabWidth": 2,
   "singleQuote": true,
   "bracketSpacing": true,
@@ -265,7 +282,9 @@ node_modules
   ]
 }
 ```
+
 ## settings
+
 ```
 {
   "[html]": {
@@ -322,12 +341,16 @@ node_modules
   ],
 }
 ```
+
 ## settings formatter
+
 ```json
 dbaeumer.vscode-eslint
 esbenp.prettier-vscode
 ```
+
 ## novo aplicativo
+
 ```json
 ng new --collection=@angular-eslint/schematics
 ```
